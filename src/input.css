@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+    @apply is need to overwrite some thing
+    we can use multiple @apply
+    components extract
+    1. specicity will get priority. padding, padding-top
+*/
+
+/* 
+    core base / preflight
+    all base thing reset by tailwind
+
+*/
+/*
+    src file a order er gurutto komanor jonno @layer system use kora hoy
+*/
+
+/*
+ base basically works on html tags like h1, p and etc. 
+*/
+/* @layer base{
+    h1{
+        @apply text-2xl;
+    }
+} */
+
+/* group utilities */
+/* @layer components {
+    .btn{
+        @apply text-sm px-4 py-1 rounded-full focus:outline-none ring-2 focus:ring-offset-4
+    }
+    .btn-purple {
+        @apply  text-teal-500 hover:bg-teal-300 hover:text-teal-700 ring-teal-200;
+    }
+    .btn-primary {
+        @apply text-blue-500 hover:bg-blue-300 hover:text-blue-700 ring-blue-200;
+    }
+} */
+
+/* 
+custom utilities
+if i want to work on my own custom utility
+ */
+/* @layer utilities{
+    .text-body{
+        font-size: 15px;
+    }
+    .rotate-0{
+        height: theme(spacing.12);
+    }
+} */
